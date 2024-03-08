@@ -21,6 +21,12 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    // https://mvnrepository.com/artifact/org.apache.kafka/kafka-streams
+    implementation("org.apache.kafka:kafka-streams:3.7.0")
+    // https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
+    implementation("org.springframework.kafka:spring-kafka:3.1.2")
+    // https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka-test
+    testImplementation("org.springframework.kafka:spring-kafka-test:3.1.2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
