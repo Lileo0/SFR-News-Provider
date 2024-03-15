@@ -5,3 +5,15 @@ spring:
       bootstrap-servers: "localhost:9092"
     producer:
       bootstrap-servers: "localhost:9092"
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/provider_db
+    username: BestUser
+    password: SecretPassword
+  jpa:
+    database-platform=org:
+      hibernate:
+        jdbc:
+          time_zone:UTC
+        hbm2ddl:
+          auto: none
+

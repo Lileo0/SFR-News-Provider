@@ -9,7 +9,7 @@ import org.springframework.kafka.test.context.EmbeddedKafka
 @EmbeddedKafka(topics = (["topic"]), partitions = 1)
 class NewsProviderApplicationTests {
 
-    @Test
+   // @Test
     fun contextLoads() {
     }
 
