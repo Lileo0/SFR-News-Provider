@@ -27,7 +27,7 @@ dependencies {
     implementation("org.springframework.kafka:spring-kafka:3.1.2")
     //implementation("com.fasterxml.jackson.core:jackson-databind:2.0.1")
     implementation("org.postgresql:postgresql:42.7.2")
-    //implementation("org.liquibase:liquibase-core:4.26.0")
+    implementation("org.liquibase:liquibase-core:4.26.0")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     // https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka-test
     testImplementation("org.springframework.kafka:spring-kafka-test:3.1.2")

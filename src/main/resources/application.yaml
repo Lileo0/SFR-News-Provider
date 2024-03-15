@@ -1,3 +1,5 @@
+server:
+  port: 8081
 spring:
   kafka:
     bootstrap-servers: "localhost:9092"
@@ -6,14 +8,9 @@ spring:
     producer:
       bootstrap-servers: "localhost:9092"
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/provider_db
-    username: BestUser
-    password: SecretPassword
-  jpa:
-    database-platform=org:
-      hibernate:
-        jdbc:
-          time_zone:UTC
-        hbm2ddl:
-          auto: none
+    url: jdbc:postgresql://127.0.0.1:5433/news
+    username: admin
+    password: admin
+  liquibase:
+    change-log: db/changelog.xml
 
