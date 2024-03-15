@@ -15,7 +15,7 @@ class WordCountProcessor {
     @Autowired
     fun buildPipeline(streamsBuilder: StreamsBuilder) {
         val messageStream = streamsBuilder
-            .stream("input-topic", Consumed.with(STRING_SERDE, STRING_SERDE))
+            .stream("news-input", Consumed.with(STRING_SERDE, STRING_SERDE))
         val wordCounts = messageStream
             .mapValues(ValueMapper { obj: String ->
                 obj.lowercase(
@@ -28,7 +28,7 @@ class WordCountProcessor {
             }
             .groupBy({ key: String?, word: String -> word }, Grouped.with(STRING_SERDE, STRING_SERDE))
             .count()
-        wordCounts.toStream().to("output-topic")
+        wordCounts.toStream().to("news-output")
     }
 
     companion object {
