@@ -59,4 +59,23 @@ open class News() {
     "feedback": "test"
 }
 
+
+{
+  "schema": {
+    "type": "record",
+    "name": "NewsArticle",
+    "fields": [
+        {"name": "title", "type": "string"},
+        {"name": "date", "type": "string"},
+        {"name": "text", "type": "string"},
+        {"name": "author", "type": "string"}
+    ]},
+  "payload": {
+    "title": "Breaking News",
+    "date": "2024-02-16",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "author": "Jane Doe"
+  }
+}
+
  */
