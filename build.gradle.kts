@@ -25,7 +25,7 @@ dependencies {
     implementation("org.apache.kafka:kafka-streams:3.7.0")
     // https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
     implementation("org.springframework.kafka:spring-kafka:3.1.2")
-    //implementation("com.fasterxml.jackson.core:jackson-databind:2.0.1")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.0.1")
     implementation("org.postgresql:postgresql:42.7.2")
     implementation("org.liquibase:liquibase-core:4.26.0")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
