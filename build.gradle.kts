@@ -16,9 +16,17 @@ java {
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://mvnrepository.com")
+        url = uri("https://packages.confluent.io/maven")
+    }
 }
 
+
 dependencies {
+    // https://mvnrepository.com/artifact/io.confluent/kafka-avro-serializer
+    implementation("io.confluent:kafka-avro-serializer:5.3.0")
+
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     // https://mvnrepository.com/artifact/org.apache.kafka/kafka-streams
